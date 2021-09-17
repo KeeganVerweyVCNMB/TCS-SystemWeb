@@ -1,0 +1,59 @@
+<h1>Register</h1>
+<p>Feel free to register to the TCS</p>
+
+<div class="imgcontainer">
+  <img src="https://www.superoffice.com/globalassets/blog/2013/5/customer-complaints.jpg" alt="Avatar" class="avatar">
+</div>
+
+<form class="form-horizontal" [formGroup]="formObject" (ngSubmit)="register()">
+  <div class="container">
+
+    <div class="text-center mt-3 mb-3" *ngIf="isLoading">
+      <span class="spinner-border spinner-border-lg mr-1"></span>
+    </div>
+
+    <div *ngIf="registerError" class="text-center mt-3 mb-3 error-message">
+      <span>Error registering. Please try again.</span>
+    </div>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" formControlName="name" [ngClass]="{ 'is-invalid': submitted && formControls.name.errors }" name="name">
+    <div *ngIf="submitted && formControls.name.errors" class="invalid-feedback">
+      <div *ngIf="formControls.name.errors.required">Name is required</div>
+    </div>
+
+    <label for="surname" class="mt-3"><b>Surname</b></label>
+    <input type="text" placeholder="Enter Surname" formControlName="surname" [ngClass]="{ 'is-invalid': submitted && formControls.surname.errors }" name="surname">
+    <div *ngIf="submitted && formControls.surname.errors" class="invalid-feedback">
+      <div *ngIf="formControls.surname.errors.required">Surname is required</div>
+    </div>
+
+    <label for="emailAddress" class="mt-3"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" formControlName="emailAddress" [ngClass]="{ 'is-invalid': submitted && formControls.emailAddress.errors }" name="emailAddress">
+    <div *ngIf="submitted && formControls.emailAddress.errors" class="invalid-feedback">
+      <div *ngIf="formControls.emailAddress.errors.required">Email is required</div>
+    </div>
+
+    <label for="cell" class="mt-3"><b>Cell Number</b></label>
+    <input type="text" placeholder="Enter Cell Number" formControlName="phoneNumber" [ngClass]="{ 'is-invalid': submitted && formControls.phoneNumber.errors }" name="phoneNumber">
+    <div *ngIf="submitted && formControls.phoneNumber.errors" class="invalid-feedback">
+      <div *ngIf="formControls.phoneNumber.errors.required">Cell Number is required</div>
+    </div>
+
+    <label for="moveInYear" class="mt-3"><b>Move in Year</b></label>
+    <input type="text" placeholder="Enter Year" formControlName="moveInYear" [ngClass]="{ 'is-invalid': submitted && formControls.moveInYear.errors }" name="moveInYear">
+    <div *ngIf="submitted && formControls.moveInYear.errors" class="invalid-feedback">
+      <div *ngIf="formControls.moveInYear.errors.required">Move in Year is required</div>
+    </div>
+
+    <label for="password" class="mt-3"><b>Password</b></label>
+    <input type={{passwordTypeText}} placeholder="Enter Password" formControlName="password" [ngClass]="{ 'is-invalid': submitted && formControls.password.errors }" name="password">
+    <div *ngIf="submitted && formControls.password.errors" class="invalid-feedback">
+      <div *ngIf="formControls.password.errors.required">Password is required</div>
+    </div>
+    <a href="javascript: void(0);" (click)="showHidePassword()">{{passwordText}}</a>
+
+    <button type="button" (click)="register()">Register</button>
+    <button type="button" (click)="cancel()" class="cancelbtn">Cancel</button>
+  </div>
+</form>

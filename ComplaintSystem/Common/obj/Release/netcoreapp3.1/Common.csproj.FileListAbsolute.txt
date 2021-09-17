@@ -1,0 +1,10 @@
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\bin\Release\netcoreapp3.1\Common.deps.json
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\bin\Release\netcoreapp3.1\Common.dll
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\bin\Release\netcoreapp3.1\Common.pdb
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\obj\Release\netcoreapp3.1\Common.csproj.AssemblyReference.cache
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\obj\Release\netcoreapp3.1\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\obj\Release\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\obj\Release\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\obj\Release\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\obj\Release\netcoreapp3.1\Common.dll
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\obj\Release\netcoreapp3.1\Common.pdb

@@ -1,0 +1,3 @@
+{
+  "CSContext": "Data Source=192.168.18.128;Initial Catalog=KeeganTestPersonal;User ID=sa;Password=Comprsa123;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;MultipleActiveResultSets=true"
+}

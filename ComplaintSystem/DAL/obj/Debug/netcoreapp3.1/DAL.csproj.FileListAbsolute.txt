@@ -1,0 +1,16 @@
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\obj\Debug\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.json
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.dev.json
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.AssemblyReference.cache
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\obj\Debug\netcoreapp3.1\DAL.genruntimeconfig.cache
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete

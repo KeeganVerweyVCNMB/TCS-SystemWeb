@@ -1,0 +1,38 @@
+<h1>TCS Complaints</h1>
+<p>Feel free to log a TCS complaint, comment or question:</p>
+
+<div class="imgcontainer">
+  <img src="https://www.superoffice.com/globalassets/blog/2013/5/customer-complaints.jpg" alt="Avatar" class="avatar">
+</div>
+
+<form class="form-horizontal" [formGroup]="formObject" (ngSubmit)="addComplaint()">
+  <div class="container">
+
+    <div class="text-center mt-3 mb-3" *ngIf="isLoading">
+      <span class="spinner-border spinner-border-lg mr-1"></span>
+    </div>
+
+    <div *ngIf="complaintError" class="text-center mt-3 mb-3 error-message">
+      <span>Error logging. Please try again.</span>
+    </div>
+
+    <div *ngIf="complaintSuccess" class="text-center mt-3 mb-3 success">
+      <span>Successfully Logged</span>
+    </div>
+
+    <label for="complaintTitle"><b>Title</b></label>
+    <input type="text" placeholder="Enter Title" formControlName="complaintTitle" [ngClass]="{ 'is-invalid': submitted && formControls.complaintTitle.errors }" (keyup)="clearErrors()" name="complaintTitle">
+    <div *ngIf="submitted && formControls.complaintTitle.errors" class="invalid-feedback">
+      <div *ngIf="formControls.complaintTitle.errors.required">Title is required</div>
+    </div>
+
+    <label for="complaintDescription" class="mt-3"><b>Complaint/Comment</b></label><br />
+    <textarea class="complaint" formControlName="complaintDescription" [ngClass]="{ 'is-invalid': submitted && formControls.complaintDescription.errors }" (keyup)="clearErrors()" placeholder="Add your complaint, comment or question" name="complaintDescription"></textarea>
+    <div *ngIf="submitted && formControls.complaintDescription.errors" class="invalid-feedback">
+      <div *ngIf="formControls.complaintDescription.errors.required">Complaint/Comment is required</div>
+    </div>
+
+    <button type="submit">Add Complaint</button>
+    <button type="button" class="cancelbtn">Cancel</button>
+  </div>
+</form>

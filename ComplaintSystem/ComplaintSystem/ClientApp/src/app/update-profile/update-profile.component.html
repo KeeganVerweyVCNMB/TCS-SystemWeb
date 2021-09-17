@@ -1,0 +1,56 @@
+<h1>Update TCS Profile</h1>
+<p>Feel free to update your TCS profile:</p>
+
+<div class="imgcontainer">
+  <img src="https://cdn.dribbble.com/users/2313212/screenshots/11256142/media/27b57b3ee2ac221dc8c616d02161d96b.jpg?compress=1&resize=400x300" alt="Avatar" class="avatar">
+</div>
+
+<form class="form-horizontal" [formGroup]="formObject" (ngSubmit)="updateProfile()">
+  <div class="container">
+
+    <div class="text-center mt-3 mb-3" *ngIf="isLoading">
+      <span class="spinner-border spinner-border-lg mr-1"></span>
+    </div>
+
+    <div *ngIf="updateError" class="text-center mt-3 mb-3 error-message">
+      <span>Error updating profile. Please try again.</span>
+    </div>
+
+    <div *ngIf="updateSuccess" class="text-center mt-3 mb-3 success">
+      <span>Successfully Update Profile</span>
+    </div>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Update Name" formControlName="name" [ngClass]="{ 'is-invalid': submitted && formControls.name.errors }" (keyup)="clearErrors()" name="name">
+    <div *ngIf="submitted && formControls.name.errors" class="invalid-feedback">
+      <div *ngIf="formControls.name.errors.required">Name is required</div>
+    </div>
+
+    <label for="surname" class="mt-3"><b>Surname</b></label>
+    <input type="text" placeholder="Update Surname" formControlName="surname" [ngClass]="{ 'is-invalid': submitted && formControls.surname.errors }" (keyup)="clearErrors()" name="surname">
+    <div *ngIf="submitted && formControls.surname.errors" class="invalid-feedback">
+      <div *ngIf="formControls.surname.errors.required">Surname is required</div>
+    </div>
+
+    <label for="emailAddress" class="mt-3"><b>Email</b></label>
+    <input type="text" placeholder="Update Email" formControlName="emailAddress" [ngClass]="{ 'is-invalid': submitted && formControls.emailAddress.errors }" (keyup)="clearErrors()" name="emailAddress">
+    <div *ngIf="submitted && formControls.emailAddress.errors" class="invalid-feedback">
+      <div *ngIf="formControls.emailAddress.errors.required">Email is required</div>
+    </div>
+
+    <label for="cell" class="mt-3"><b>Cell Number</b></label>
+    <input type="text" placeholder="Update Cell Number" formControlName="phoneNumber" [ngClass]="{ 'is-invalid': submitted && formControls.phoneNumber.errors }" (keyup)="clearErrors()" name="phoneNumber">
+    <div *ngIf="submitted && formControls.phoneNumber.errors" class="invalid-feedback">
+      <div *ngIf="formControls.phoneNumber.errors.required">Cell Number is required</div>
+    </div>
+
+    <label for="moveInYear" class="mt-3"><b>Move in Year</b></label>
+    <input type="text" placeholder="Update Year" formControlName="moveInYear" [ngClass]="{ 'is-invalid': submitted && formControls.moveInYear.errors }" (keyup)="clearErrors()" name="moveInYear">
+    <div *ngIf="submitted && formControls.moveInYear.errors" class="invalid-feedback">
+      <div *ngIf="formControls.moveInYear.errors.required">Move in Year is required</div>
+    </div>
+
+    <button type="button" class="mt-3" (click)="updateProfile()">Update Profile</button>
+    <button type="button" (click)="cancel()" class="cancelbtn">Cancel</button>
+  </div>
+</form>
