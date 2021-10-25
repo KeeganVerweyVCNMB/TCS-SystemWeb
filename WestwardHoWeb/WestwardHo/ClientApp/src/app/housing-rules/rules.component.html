@@ -1,0 +1,42 @@
+<h1>Westward Ho Housing Rules</h1>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="imgcontainer">
+  <img src="../../assets/drawables/westward-ho-logo.jpg" alt="Westward Ho Logo" class="avatar">
+</div>
+
+<div class="text-center mt-3 mb-3" *ngIf="isLoading">
+  <span class="spinner-border spinner-border-lg mr-1"></span>
+</div>
+
+<div class="page-content container note-has-grid" *ngIf="!isLoading">
+  <button class="pill-button" [hidden]="!isAdminUser" (click)="addRule()">Add Housing Rule</button>
+  <br />
+  <br />
+  <div class="tab-content bg-transparent">
+    <div *ngIf="rulesList.length == 0" class="text-center mt-3 mb-3">
+      <span>There are no Housing Rules to display</span>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-3 d-lg-none d-xl-none" *ngFor="let rule of rules">
+        <div class="card card-body">
+          <span class="side-stick"></span>
+          <h5 class="note-title text-center"><b>{{rule.title}}</b></h5>
+          <div class="note-content">
+            <p class="note-inner-content text-muted text-center">{{rule.rule}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 mt-3 d-none d-sm-none d-xs-none d-md-none d-lg-block" *ngFor="let rule of rules">
+        <div class="card card-body">
+          <span class="side-stick"></span>
+          <h5 class="note-title text-center"><b>{{rule.title}}</b></h5>
+          <div class="note-content">
+            <p class="note-inner-content text-muted text-center">{{rule.rule}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

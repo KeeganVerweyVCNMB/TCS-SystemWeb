@@ -1,0 +1,49 @@
+<div id="contentToConvert">
+  <h1>Tenant Housing Reporting PDF</h1>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="text-center mt-3 mb-3" *ngIf="isLoading">
+    <span class="spinner-border spinner-border-lg mr-1"></span>
+  </div>
+
+  <div *ngIf="!isLoading">
+    <div class="imgcontainer">
+      <img src="../../assets/drawables/westward-ho-logo.jpg" alt="Westward Ho Logo" class="avatar">
+    </div>
+    <br />
+    <h5>Tenant Water Usage</h5>
+    <div *ngIf="noWater" class="mt-3 text-center">This User has no logged water data.</div>
+
+    <div class="chart-container mt-5 mb-5" ng-show="graph.visible">
+      <canvas id="barChart" width="700" height="400"></canvas>
+    </div>
+
+    <div class="chart-container mt-5 mb-5" ng-show="graph.visible">
+      <canvas id="lineChart" width="700" height="400"></canvas>
+    </div>
+
+    <h5>Logged Complaints</h5>
+    <div *ngIf="noComplaints" class="mt-3 text-center">This User has no complaints logged.</div>
+
+    <div *ngFor="let complaint of complaints">
+      <div class="list-group">
+        <div class="list-group-item list-group-item-action flex-column align-items-start mt-3">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1"><u>{{complaint.complaintTitle}}</u></h5>
+          </div>
+          <p class="mb-1" style="overflow-wrap: break-word;">{{complaint.complaintDescription}}</p>
+          <small>Created By: <b>{{complaint.createdByName}}</b></small>
+          <br />
+          <small>Created On: <b>{{complaint.dateCreated}}</b></small>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<button *ngIf="!isLoading" class="pill-button mb-3" [disabled]="isDownloading" (click)="convertToPDF()">
+  <span class="spinner-border spinner-border-sm mr-1 small"  *ngIf="isDownloading"></span>Download</button>
+<br/>
+

@@ -1,0 +1,110 @@
+<h1>Westward Ho Tenant Reports</h1>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="imgcontainer">
+  <img src="../../assets/drawables/westward-ho-logo.jpg" alt="Westward Ho Logo" class="avatar">
+</div>
+
+<div class="text-center mt-3 mb-3" *ngIf="isLoading">
+  <span class="spinner-border spinner-border-lg mr-1"></span>
+</div>
+
+
+<div *ngIf="!isLoading">
+  <input #search type="text" placeholder="General Search" class="search-box mt-5" [(ngModel)]="searchTerm" (keyup)="filterTS()" *ngIf="!isLoading">
+
+  <div *ngIf="reportsList.length > 0" class="row d-none d-sm-none d-xs-none d-md-none d-lg-block">
+    <table class="table mt-2">
+      <thead class="primary-color">
+        <tr>
+          <th scope="col" style="text-align:center">Unit Number</th>
+          <th scope="col" style="text-align:center">First Name</th>
+          <th scope="col" style="text-align:center">Last Name</th>
+          <th scope="col" style="text-align:center">Email</th>
+          <th scope="col" style="text-align:center">Cell Number</th>
+          <th scope="col" style="text-align:center">Actions</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let report of reports">
+        <tr>
+          <th style="text-align:center">{{report.unitNumber}}</th>
+          <td style="text-align:center">{{report.name}}</td>
+          <td style="text-align:center">{{report.surname}}</td>
+          <td style="text-align:center">{{report.emailAddress}}</td>
+          <td style="text-align:center">{{report.phoneNumber}}</td>
+          <td style="text-align:center">
+            <span class="add-cursor" (click)="navigateToPreview(report.userID)"><i class="fa fa-eye fa-lg"></i></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="reportsList.length > 0" class="row d-lg-none d-xl-none">
+    <table class="table mt-2">
+      <thead class="primary-color">
+        <tr>
+          <th scope="col" style="text-align:center">Unit Number</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let report of reports">
+        <tr>
+          <th style="text-align:center">{{report.unitNumber}}</th>
+        </tr>
+      </tbody>
+      <thead class="primary-color">
+        <tr>
+          <th scope="col" style="text-align:center">First Name</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let report of reports">
+        <tr>
+          <td style="text-align:center">{{report.name}}</td>
+        </tr>
+      </tbody>
+      <thead class="primary-color">
+        <tr>
+          <th scope="col" style="text-align:center">Last Name</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let report of reports">
+        <tr>
+          <td style="text-align:center">{{report.surname}}</td>
+        </tr>
+      </tbody>
+      <thead class="primary-color">
+        <tr>
+          <th scope="col" style="text-align:center">Email</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let report of reports">
+        <tr>
+          <td style="text-align:center">{{report.emailAddress}}</td>
+        </tr>
+      </tbody>
+      <thead class="primary-color">
+        <tr>
+          <th scope="col" style="text-align:center">Cell Number</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let report of reports">
+        <tr>
+          <td style="text-align:center">{{report.phoneNumber}}</td>
+        </tr>
+      </tbody>
+      <thead class="primary-color">
+        <tr>
+          <th scope="col" style="text-align:center">Actions</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let report of reports">
+        <tr>
+          <td style="text-align:center">
+            <span class="add-cursor" (click)="navigateToPreview(report.userID)"><i class="fa fa-eye fa-lg"></i></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

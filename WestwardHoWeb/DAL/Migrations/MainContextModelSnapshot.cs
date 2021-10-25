@@ -50,6 +50,133 @@ namespace DAL.Migrations
                     b.ToTable("Complaint");
                 });
 
+            modelBuilder.Entity("Common.Models.LogWaterModel", b =>
+                {
+                    b.Property<Guid>("WaterLogID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Billed")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DateEnd")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DateStart")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Unit")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Usage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UserID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("WaterLogID");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("WaterLog");
+                });
+
+            modelBuilder.Entity("Common.Models.MeetingsModel", b =>
+                {
+                    b.Property<Guid>("MeetingID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Host")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Link")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UserID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("MeetingID");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("Meetings");
+                });
+
+            modelBuilder.Entity("Common.Models.NotesModel", b =>
+                {
+                    b.Property<Guid>("NoteID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Note")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UserID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("NoteID");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("Notices");
+                });
+
+            modelBuilder.Entity("Common.Models.RulesModel", b =>
+                {
+                    b.Property<Guid>("RuleID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Rule")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UserID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("RuleID");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("HousingRules");
+                });
+
             modelBuilder.Entity("Common.Models.UserModel", b =>
                 {
                     b.Property<Guid>("UserID")
@@ -58,6 +185,9 @@ namespace DAL.Migrations
 
                     b.Property<string>("EmailAddress")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsAdmin")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -77,6 +207,9 @@ namespace DAL.Migrations
                     b.Property<string>("Surname")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("UnitNumber")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("UserID");
 
                     b.ToTable("User");
@@ -86,6 +219,50 @@ namespace DAL.Migrations
                 {
                     b.HasOne("Common.Models.UserModel", "User")
                         .WithMany("Complaints")
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Common.Models.LogWaterModel", b =>
+                {
+                    b.HasOne("Common.Models.UserModel", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Common.Models.MeetingsModel", b =>
+                {
+                    b.HasOne("Common.Models.UserModel", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Common.Models.NotesModel", b =>
+                {
+                    b.HasOne("Common.Models.UserModel", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Common.Models.RulesModel", b =>
+                {
+                    b.HasOne("Common.Models.UserModel", "User")
+                        .WithMany()
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

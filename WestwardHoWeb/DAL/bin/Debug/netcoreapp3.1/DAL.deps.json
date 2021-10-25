@@ -1535,6 +1535,9 @@
         }
       },
       "Common/1.0.0": {
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
         "runtime": {
           "Common.dll": {}
         }

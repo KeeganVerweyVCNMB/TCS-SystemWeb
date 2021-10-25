@@ -1,7 +1,7 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <header>
-  <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-  >
+  <nav class="navbar navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container">
       <a class="navbar-brand">{{username}}</a>
       <button class="navbar-toggler"
@@ -13,34 +13,55 @@
               (click)="toggle()">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
-           [ngClass]="{ show: isExpanded }">
+      <div class="navbar-collapse collapse text-center" [ngClass]="{ show: isExpanded }">
         <ul class="navbar-nav flex-grow">
 
-          <li class="nav-item"
-              [routerLinkActive]="['link-active']"
-              [routerLinkActiveOptions]="{ exact: true }" *ngIf="!isLoggedIn">
+          <li class="nav-item" *ngIf="!isLoggedIn" (click)="toggle()">
             <a class="nav-link text-dark" [routerLink]="['/']">Login</a>
           </li>
 
-          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="!isLoggedIn">
+          <li class="nav-item" *ngIf="!isLoggedIn" (click)="toggle()">
             <a class="nav-link text-dark" [routerLink]="['/register']">Register</a>
           </li>
 
-          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="isLoggedIn">
-            <a class="nav-link text-dark" [routerLink]="['/complaints']">Add Complaint</a>
+          <li class="nav-item" *ngIf="isLoggedIn" (click)="toggle()">
+            <a class="nav-link text-dark" [routerLink]="['/notice-board']"><i class="fa fa-info-circle"></i>  Notice Board</a>
           </li>
 
-          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="isLoggedIn">
-            <a class="nav-link text-dark" [routerLink]="['/view-complaints']">View Complaints</a>
+          <li class="nav-item" *ngIf="isLoggedIn" (click)="toggle()">
+            <a class="nav-link text-dark" [routerLink]="['/log-ticket']"><i class="fa fa-comment"></i>  Log Ticket</a>
           </li>
 
-          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="isLoggedIn">
-            <a class="nav-link text-dark" [routerLink]="['/update-profile']">Update Profile</a>
+          <li class="nav-item" *ngIf="isLoggedIn" (click)="toggle()">
+            <a class="nav-link text-dark" [routerLink]="['/view-ticket']"><i class="fa fa-eye"></i>  View Tickets</a>
           </li>
 
-          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="isLoggedIn">
-            <a class="nav-link text-dark" (click)="logout()" href="javascript: void(0);">Logout</a>
+          <li class="nav-item" *ngIf="isLoggedIn" (click)="toggle()">
+            <a class="nav-link text-dark" [routerLink]="['/log-water-usage']"><i class="fa fa-pencil-square-o"></i>  Log Water Usage</a>
+          </li>
+
+          <li class="nav-item" *ngIf="isLoggedIn" [hidden]="!isAdminUser" (click)="toggle()">
+            <a class="nav-link text-dark" [routerLink]="['/view-water-usage']"><i class="fa fa-bar-chart"></i>  View Water Usage</a>
+          </li>
+
+          <li class="nav-item" *ngIf="isLoggedIn" [hidden]="!isAdminUser" (click)="toggle()">
+            <a class="nav-link text-dark" [routerLink]="['/reporting']"><i class="fa fa-file-text"></i>  Reports</a>
+          </li>
+
+          <li class="nav-item" *ngIf="isLoggedIn" [hidden]="!isAdminUser" (click)="toggle()">
+            <a class="nav-link text-dark" [routerLink]="['/meetings']"><i class="fa fa-users"></i>  Meetings</a>
+          </li>
+
+          <li class="nav-item" *ngIf="isLoggedIn" (click)="toggle()">
+            <a class="nav-link text-dark" [routerLink]="['/update-profile']"><i class="fa fa-user"></i>  Update Profile</a>
+          </li>
+
+          <li class="nav-item" *ngIf="isLoggedIn" (click)="toggle()">
+            <a class="nav-link text-dark" [routerLink]="['/housing-rules']"><i class="fa fa-home"></i>  Housing Rules</a>
+          </li>
+
+          <li class="nav-item" *ngIf="isLoggedIn" (click)="toggle()">
+            <a class="nav-link text-dark" (click)="logout()" href="javascript: void(0);"><i class="fa fa-sign-out"></i>  Logout</a>
           </li>
         </ul>
       </div>

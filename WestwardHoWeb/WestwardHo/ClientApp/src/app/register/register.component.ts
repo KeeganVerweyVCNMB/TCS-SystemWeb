@@ -30,6 +30,7 @@ export class RegisterComponent implements OnInit {
       surname: ['', Validators.required],
       emailAddress: ['', Validators.required],
       phoneNumber: ['', Validators.required],
+      unitNumber: ['', Validators.required],
       moveInYear: ['', Validators.required],
       password: ['', Validators.required],
     });
@@ -49,7 +50,7 @@ export class RegisterComponent implements OnInit {
     }
 
     this.systemService.register(this.formControls.name.value, this.formControls.surname.value, this.formControls.emailAddress.value,
-      this.formControls.phoneNumber.value, this.formControls.moveInYear.value, this.formControls.password.value).then(response => {
+      this.formControls.phoneNumber.value, this.formControls.unitNumber.value, this.formControls.moveInYear.value, this.formControls.password.value).then(response => {
       if (response == null) {
         this.isLoading = false;
         this.registerError = true;
@@ -69,6 +70,7 @@ export class RegisterComponent implements OnInit {
     this.formControls.surname.setValue('');
     this.formControls.emailAddress.setValue('');
     this.formControls.phoneNumber.setValue('');
+    this.formControls.unitNumber.setValue('');
     this.formControls.moveInYear.setValue('');
     this.formControls.password.setValue('');
   }

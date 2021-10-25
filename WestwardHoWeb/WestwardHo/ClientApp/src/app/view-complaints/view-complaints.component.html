@@ -1,19 +1,19 @@
-<h1>TCS Complaints</h1>
-<p>View TCS complaints:</p>
+<h1>Westward Ho Logged Tickets</h1>
+<p>View Westward Ho TS tickets:</p>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="imgcontainer">
-  <img src="https://www.superoffice.com/globalassets/blog/2013/5/customer-complaints.jpg" alt="Avatar" class="avatar">
+  <img src="../../assets/drawables/westward-ho-logo.jpg" alt="Westward Ho Logo" class="avatar">
 </div>
 
-<div class="container">
+<div class="text-center mt-3 mb-3" *ngIf="isLoading">
+  <span class="spinner-border spinner-border-lg mr-1"></span>
+</div>
 
-  <div class="text-center mt-3 mb-3" *ngIf="isLoading">
-    <span class="spinner-border spinner-border-lg mr-1"></span>
-  </div>
+<div class="container" *ngIf="!isLoading">
 
-  <input #search type="text" placeholder="Search TCS Titles" class="search-box" [(ngModel)]="searchTerm" (keyup)="filterTCS()" *ngIf="!isLoading">
+  <input #search type="text" placeholder="Search Complaints" class="search-box" [(ngModel)]="searchTerm" (keyup)="filterTS()">
 
   <div *ngIf="!isLoading">
     <div *ngFor="let complaint of complaints">
@@ -31,7 +31,7 @@
           <br />
 
           <small for="complaintStatus" class="mt-3">Change Status:</small>
-          <select class="form-control" ([ngModel])="complaint.complaintStatus" value="{{complaint.complaintStatus}}" (change)="updateStatus(complaint.complaintsID, $event.srcElement.value)">
+          <select [disabled]="!isAdminUser" class="form-control" ([ngModel])="complaint.complaintStatus" value="{{complaint.complaintStatus}}" (change)="updateStatus(complaint.complaintsID, $event.srcElement.value)">
             <option value="" disabled>Please Select</option>
             <option value="New">New</option>
             <option value="In Progress">In Progress</option>
@@ -43,7 +43,7 @@
       </div>
     </div>
 
-    <div *ngIf="complaints.length == 0" class="mt-3 text-center">No TCS Data to Display</div>
+    <div *ngIf="complaints.length == 0" class="mt-3 text-center">No Complaints to Display</div>
 
   </div>
 </div>

@@ -16,7 +16,9 @@ namespace Common.Models
         public string EmailAddress { get; set; }
         public string PhoneNumber { get; set; }
         public string MoveInYear { get; set; }
+        public string UnitNumber { get; set; }
         public string Password { get; set; }
+        public bool IsAdmin { get; set; } = false;
         public bool IsDeleted { get; set; } = false;
         public virtual ICollection<ComplaintsModel> Complaints { get; set; }
     }

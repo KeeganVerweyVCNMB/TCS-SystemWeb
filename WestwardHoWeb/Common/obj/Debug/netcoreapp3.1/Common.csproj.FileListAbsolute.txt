@@ -8,3 +8,27 @@ C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\obj\Debug\
 C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
 C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\obj\Debug\netcoreapp3.1\Common.dll
 C:\Users\Keegan\Documents\Varsity College 2021\ComplaintSystem\Common\obj\Debug\netcoreapp3.1\Common.pdb
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.pdb
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\bin\Debug\netcoreapp3.1\Common.runtimeconfig.json
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\bin\Debug\netcoreapp3.1\Common.runtimeconfig.dev.json
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\VC 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.genruntimeconfig.cache
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\bin\Debug\netcoreapp3.1\Common.runtimeconfig.json
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\bin\Debug\netcoreapp3.1\Common.runtimeconfig.dev.json
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.pdb
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.genruntimeconfig.cache
+C:\Users\User\Desktop\VC 2021\Semester 2 2021\XISD-6319\WestwardHoWebSystemPrj\TCS-SystemWeb\WestwardHoWeb\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache

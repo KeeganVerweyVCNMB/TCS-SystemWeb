@@ -3,7 +3,7 @@ using Common.DTO;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
-namespace ComplaintSystem.Controllers
+namespace WestwardHoSystem.Controllers
 {
     [ApiController]
     [Route("[controller]")]

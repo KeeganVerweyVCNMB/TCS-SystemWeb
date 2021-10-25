@@ -42,6 +42,7 @@ namespace BLL
             user.EmailAddress = dto.EmailAddress;
             user.Name = dto.Name;
             user.Surname = dto.Surname;
+            user.UnitNumber = dto.UnitNumber;
             user.MoveInYear = dto.MoveInYear;
             user.PhoneNumber = dto.PhoneNumber;
             _userRepository.AddUpdateUserProfile(user);
@@ -60,6 +61,7 @@ namespace BLL
                 EmailAddress = dto.EmailAddress,
                 Name = dto.Name,
                 Surname = dto.Surname,
+                UnitNumber = dto.UnitNumber,
                 MoveInYear = dto.MoveInYear,
                 Password = dto.Password,
                 PhoneNumber = dto.PhoneNumber,
@@ -74,6 +76,7 @@ namespace BLL
                 EmailAddress = model.EmailAddress,
                 Name = model.Name,
                 Surname = model.Surname,
+                UnitNumber = model.UnitNumber,
                 MoveInYear = model.MoveInYear,
                 PhoneNumber = model.PhoneNumber,
                 UserID = model.UserID

@@ -11,7 +11,7 @@ namespace DAL
         {
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IComplaintsRepository, ComplaintsRepository>();
-            services.AddDbContext<MainContext>(context => context.UseLazyLoadingProxies().UseSqlServer("Server=tcp:complaintsserver.database.windows.net,1433;Initial Catalog=complaints;Persist Security Info=False;User ID=adminuser;Password=notComprsa123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;").EnableSensitiveDataLogging());
+            services.AddDbContext<MainContext>(context => context.UseLazyLoadingProxies().UseSqlServer("Server=tcp:westwardhosqlserver.database.windows.net,1433;Initial Catalog=WestwardHoDB;Persist Security Info=False;User ID=WestwardAdmin;Password=Pasta@711;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;").EnableSensitiveDataLogging());
         }
     }
 }

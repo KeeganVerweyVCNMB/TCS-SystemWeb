@@ -1,16 +1,18 @@
-<h1>TCS Complaints</h1>
-<p>Feel free to log a TCS complaint, comment or question:</p>
+<h1>Westward Ho Ticket Logging</h1>
+<p>Feel free to log a new ticket:</p>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="imgcontainer">
-  <img src="https://www.superoffice.com/globalassets/blog/2013/5/customer-complaints.jpg" alt="Avatar" class="avatar">
+  <img src="../../assets/drawables/westward-ho-logo.jpg" alt="Westward Ho Logo" class="avatar">
+</div>
+
+<div class="text-center mt-3 mb-3" *ngIf="isLoading">
+  <span class="spinner-border spinner-border-lg mr-1"></span>
 </div>
 
 <form class="form-horizontal" [formGroup]="formObject" (ngSubmit)="addComplaint()">
-  <div class="container">
-
-    <div class="text-center mt-3 mb-3" *ngIf="isLoading">
-      <span class="spinner-border spinner-border-lg mr-1"></span>
-    </div>
+  <div class="container" *ngIf="!isLoading">
 
     <div *ngIf="complaintError" class="text-center mt-3 mb-3 error-message">
       <span>Error logging. Please try again.</span>
@@ -33,6 +35,6 @@
     </div>
 
     <button type="submit">Add Complaint</button>
-    <button type="button" class="cancelbtn">Cancel</button>
+    <button type="button" (click)="cancel()" class="cancelbtn">Cancel</button>
   </div>
 </form>

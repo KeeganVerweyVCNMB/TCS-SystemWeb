@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
     return this.formObject.controls;
   }
 
-  login() {
+  login() {    
     this.isLoading = true;
     this.submitted = true;
 
@@ -61,7 +61,7 @@ export class HomeComponent implements OnInit {
         localStorage.setItem("username", response.name + " " + response.surname);
         this.dataService.sendUserID(response.userID);
         this.isLoading = false;
-        this.router.navigate(['/complaints']);
+        this.router.navigate(['/notice-board']);
       }
     });
   }
@@ -73,9 +73,11 @@ export class HomeComponent implements OnInit {
     this.formControls.password.setValue('');    
   }
 
-  clearErrors() {
-    this.submitted = false;
-    this.loginError = false;
+  clearErrors(e) {
+    if (e.code != "Enter" && e.code != "NumpadEnter") {
+      this.submitted = false;
+      this.loginError = false;
+    }
   }
 
   showHidePassword() {

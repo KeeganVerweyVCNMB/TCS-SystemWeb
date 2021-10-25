@@ -41,11 +41,7 @@ namespace DAL.Respositories
             {
                 return false;
             }
-
-
-            
         }
-
 
         public UserModel GetUserByID(Guid userID)
         {

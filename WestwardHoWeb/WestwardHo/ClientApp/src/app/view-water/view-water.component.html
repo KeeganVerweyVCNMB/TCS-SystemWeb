@@ -1,0 +1,21 @@
+<h1>View Water Usage</h1>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="imgcontainer">
+  <img src="../../assets/drawables/westward-ho-logo.jpg" alt="Westward Ho Logo" class="avatar">
+</div>
+
+<div class="text-center mt-3 mb-3" *ngIf="isLoading">
+  <span class="spinner-border spinner-border-lg mr-1"></span>
+</div>
+
+<div *ngIf="!isLoading">
+  <div class="chart-container mt-5 mb-5" ng-show="graph.visible">
+    <canvas id="barChart" width="700" height="400"></canvas>
+  </div>
+
+  <div class="chart-container mt-5 mb-5" ng-show="graph.visible">
+    <canvas id="lineChart" width="700" height="400"></canvas>
+  </div>
+</div>

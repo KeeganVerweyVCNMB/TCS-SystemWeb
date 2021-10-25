@@ -9,7 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using System;
 
-namespace ComplaintSystem
+namespace WestwardHoSystem
 {
     public class Startup
     {

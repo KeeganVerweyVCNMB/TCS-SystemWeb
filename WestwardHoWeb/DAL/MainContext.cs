@@ -19,5 +19,9 @@ namespace DAL
 
         public DbSet<UserModel> User { get; set; }
         public DbSet<ComplaintsModel> Complaint { get; set; }
+        public DbSet<LogWaterModel> LogWater { get; set; }
+        public DbSet<NotesModel> Note { get; set; }
+        public DbSet<RulesModel> Rule { get; set; }
+        public DbSet<MeetingsModel> Meeting { get; set; }
     }
 }

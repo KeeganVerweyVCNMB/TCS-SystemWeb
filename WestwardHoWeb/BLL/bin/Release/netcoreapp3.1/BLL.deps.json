@@ -9,6 +9,7 @@
       "BLL/1.0.0": {
         "dependencies": {
           "DAL": "1.0.0",
+          "EntityFramework": "6.4.4",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
         },
@@ -1505,6 +1506,9 @@
         }
       },
       "Common/1.0.0": {
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
         "runtime": {
           "Common.dll": {}
         }

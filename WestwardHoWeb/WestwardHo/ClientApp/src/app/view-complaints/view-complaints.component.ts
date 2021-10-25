@@ -15,6 +15,9 @@ export class ViewComplaintsComponent implements OnInit {
   complaints: Array<any> = [];
   complaintsList: Array<any> = [];
   searchTerm: string = '';
+  isAdmin: Array<any> = [];
+  isAdminList: Array<any> = [];
+  isAdminUser: boolean = false;
 
   constructor(
     private router: Router,
@@ -25,9 +28,10 @@ export class ViewComplaintsComponent implements OnInit {
   ngOnInit() {
     this.userID = localStorage.getItem("userID");
     this.getComplaint();
+    this.canUpdateStatus();
   }
 
-  filterTCS() {
+  filterTS() {
     var term = this.searchTerm;
 
     if (term === '') {
@@ -40,7 +44,28 @@ export class ViewComplaintsComponent implements OnInit {
     }
   }
 
+  canUpdateStatus() {
+    if (this.userID != null) {
+      this.systemService.getCanUserViewComplaints(this.userID).then(results => {
+        if (results != null && results != undefined && results.length > 0) {
+          this.isAdmin = results;
+          this.isAdminList = results;
+
+          if (this.isAdmin[0].isAdmin) {
+            this.isAdminUser = true;
+          }
+          else {
+            this.isAdminUser = false;
+          }
+        }
+      });
+    }
+  }
+
   getComplaint() {
+    this.isLoading = true;
+    this.complaints = [];
+    this.complaintsList = [];
     this.systemService.getComplaints().then(results => {
       if (results != null && results != undefined && results.length > 0) {
         this.complaints = results;
@@ -57,6 +82,7 @@ export class ViewComplaintsComponent implements OnInit {
   deleteComplaint(complaintID) {
     this.isLoading = true;
     this.systemService.deleteComplaint(complaintID).then(e => {
+      this.isLoading = true;
       this.getComplaint();
     });
   }

@@ -1,0 +1,64 @@
+<h1>Water Usage.</h1>
+<p>Log your water usage:</p>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="imgcontainer">
+  <img src="../../assets/drawables/westward-ho-logo.jpg" alt="Westward Ho Logo" class="avatar">
+</div>
+
+<div class="text-center mt-3 mb-3" *ngIf="isLoading">
+  <span class="spinner-border spinner-border-lg mr-1"></span>
+</div>
+
+<form class="form-horizontal" [formGroup]="formObject" (ngSubmit)="logWater()">
+  <div class="container" *ngIf="!isLoading">
+
+    <div *ngIf="logError" class="text-center mt-3 mb-3 error-message">
+      <span>Error logging water. Please try again.</span>
+    </div>
+
+    <div *ngIf="waterLogSuccess" class="text-center mt-3 mb-3 success">
+      <span>Successfully Logged</span>
+    </div>
+
+    <label for="unit" class="mt-3"><b>Unit Number</b></label>
+    <input type="text" placeholder="Enter Unit Number" formControlName="unit" (keyup)="clearErrors()" [ngClass]="{ 'is-invalid': submitted && formControls.unit.errors }" name="unit">
+    <div *ngIf="submitted && formControls.unit.errors" class="invalid-feedback">
+      <div *ngIf="formControls.unit.errors.required">Unit Number is required</div>
+    </div>
+
+    <label for="name" class="mt-3"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" formControlName="name" (keyup)="clearErrors()" [ngClass]="{ 'is-invalid': submitted && formControls.name.errors }" name="name">
+    <div *ngIf="submitted && formControls.name.errors" class="invalid-feedback">
+      <div *ngIf="formControls.name.errors.required">Name is required</div>
+    </div>
+
+    <label for="usage" class="mt-3"><b>Water Usage (L)</b></label>
+    <input type="text" placeholder="Enter Usage (L)" formControlName="usage" (keyup)="clearErrors()" [ngClass]="{ 'is-invalid': submitted && formControls.usage.errors }" name="usage">
+    <div *ngIf="submitted && formControls.usage.errors" class="invalid-feedback">
+      <div *ngIf="formControls.usage.errors.required">Water Usage is required</div>
+    </div>
+
+    <label for="billed" class="mt-3"><b>Water Bill</b></label>
+    <input type="text" placeholder="Enter Usage Bill" formControlName="billed" (keyup)="clearErrors()" [ngClass]="{ 'is-invalid': submitted && formControls.billed.errors }" name="billed">
+    <div *ngIf="submitted && formControls.billed.errors" class="invalid-feedback">
+      <div *ngIf="formControls.billed.errors.required">Water Bill is required</div>
+    </div>
+
+    <label for="dateStart" class="mt-3"><b>Start Date</b></label>
+    <input type="text" placeholder="Enter Start Date" formControlName="dateStart" (keyup)="clearErrors()" [ngClass]="{ 'is-invalid': submitted && formControls.dateStart.errors }" name="dateStart">
+    <div *ngIf="submitted && formControls.dateStart.errors" class="invalid-feedback">
+      <div *ngIf="formControls.dateStart.errors.required">Start Date is required</div>
+    </div>
+
+    <label for="dateEnd" class="mt-3"><b>End Date</b></label>
+    <input type="text" placeholder="Enter End Date" formControlName="dateEnd" (keyup)="clearErrors()" [ngClass]="{ 'is-invalid': submitted && formControls.dateEnd.errors }" name="dateEnd">
+    <div *ngIf="submitted && formControls.dateEnd.errors" class="invalid-feedback">
+      <div *ngIf="formControls.dateEnd.errors.required">End Date is required</div>
+    </div>
+
+    <button type="button" (click)="logWater()">Log Usage</button>
+    <button type="button" (click)="cancel()" class="cancelbtn">Cancel</button>
+  </div>
+</form>

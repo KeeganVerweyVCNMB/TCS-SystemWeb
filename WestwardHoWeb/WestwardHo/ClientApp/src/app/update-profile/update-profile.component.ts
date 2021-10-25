@@ -31,6 +31,7 @@ export class UpdateProfileComponent implements OnInit {
       surname: ['', Validators.required],
       emailAddress: ['', Validators.required],
       phoneNumber: ['', Validators.required],
+      unitNumber: ['', Validators.required],
       moveInYear: ['', Validators.required],
     });
     this.getUserProfile();
@@ -55,7 +56,7 @@ export class UpdateProfileComponent implements OnInit {
       return;
     }
     this.systemService.updateUserProfile(this.formControls.name.value, this.formControls.surname.value, this.formControls.emailAddress.value,
-      this.formControls.phoneNumber.value, this.formControls.moveInYear.value, this.userID).then(response => {
+      this.formControls.phoneNumber.value, this.formControls.unitNumber.value, this.formControls.moveInYear.value, this.userID).then(response => {
       if (response == null) {
         this.isLoading = false;
         this.updateError = true;
@@ -76,6 +77,7 @@ export class UpdateProfileComponent implements OnInit {
     this.formControls.surname.setValue('');
     this.formControls.emailAddress.setValue('');
     this.formControls.phoneNumber.setValue('');
+    this.formControls.unitNumber.setValue('');
     this.formControls.moveInYear.setValue('');
   }
 

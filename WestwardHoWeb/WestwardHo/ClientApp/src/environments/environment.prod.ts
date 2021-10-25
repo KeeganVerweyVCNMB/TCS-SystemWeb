@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://complaintssystem.azurewebsites.net/'
+  apiUrl: 'https://westwardho.azurewebsites.net/'
 };
