@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj": {}
+    "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj": {
+    "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj"
+              "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\Common\\Common.csproj": {
+    "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\Common\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -132,14 +132,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj": {
+    "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,8 +155,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\Common\\Common.csproj"
+              "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\Common\\Common.csproj"
               }
             }
           }

@@ -48,7 +48,7 @@
             <a class="nav-link text-dark" [routerLink]="['/reporting']"><i class="fa fa-file-text"></i>  Reports</a>
           </li>
 
-          <li class="nav-item" *ngIf="isLoggedIn" [hidden]="!isAdminUser" (click)="toggle()">
+          <li class="nav-item" *ngIf="isLoggedIn" (click)="toggle()">
             <a class="nav-link text-dark" [routerLink]="['/meetings']"><i class="fa fa-users"></i>  Meetings</a>
           </li>
 

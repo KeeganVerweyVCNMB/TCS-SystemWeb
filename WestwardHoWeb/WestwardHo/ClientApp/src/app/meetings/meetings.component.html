@@ -1,10 +1,10 @@
-<h1>Westward Ho Admin Meetings</h1>
+<h1>Westward Ho Meetings</h1>
 <p>Feel free to host a new meeting:</p>
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 <div class="imgcontainer">
-  <img src="../../assets/drawables/westward-ho-logo.jpg" alt="Westward Ho Logo" class="avatar">
+  <img src="../../assets/drawables/westward-ho-logo-V2.jpg" alt="Westward Ho Logo" class="avatar">
 </div>
 
 <div class="text-center mt-3 mb-3" *ngIf="isLoading">
@@ -12,7 +12,7 @@
 </div>
 
 <div *ngIf="!isLoading">
-  <button class="pill-button mt-5" (click)="addMeeting()">Schedule Meeting</button>
+  <button class="pill-button mt-5" [hidden]="!isAdminUser" (click)="addMeeting()">Schedule Meeting</button>
   <div *ngIf="meetingsList.length == 0" class="text-center mt-3 mb-3">
     <span>There are no scheduled meetings.</span>
   </div>
@@ -37,7 +37,7 @@
           <td style="color: blue; cursor: pointer; overflow-wrap: break-word; text-align:center" (click)="navigateMeeting(meeting.link)"><u>{{meeting.link}}</u></td>
           <td style="text-align:center">
             <span class="add-cursor" (click)="navigateMeeting(meeting.link)"><i class="fa fa-user-plus fa-lg"></i></span>
-            <span class="ml-2 add-cursor" (click)="deleteMeeting(meeting.meetingID)"><i class="fa fa-trash fa-lg"></i></span>
+            <span class="ml-2 add-cursor error-message" [hidden]="!isAdminUser" (click)="deleteMeeting(meeting.meetingID)"><i class="fa fa-trash fa-lg"></i></span>
           </td>
         </tr>
       </tbody>
@@ -95,7 +95,7 @@
         <tr>
           <td style="text-align:center">
             <span class="add-cursor" (click)="navigateMeeting(meeting.link)"><i class="fa fa-user-plus fa-lg"></i></span>
-            <span class="ml-2 add-cursor" (click)="deleteMeeting(meeting.meetingID)"><i class="fa fa-trash fa-lg"></i></span>
+            <span class="ml-2 add-cursor" [hidden]="!isAdminUser" (click)="deleteMeeting(meeting.meetingID)"><i class="fa fa-trash fa-lg"></i></span>
           </td>
         </tr>
       </tbody>

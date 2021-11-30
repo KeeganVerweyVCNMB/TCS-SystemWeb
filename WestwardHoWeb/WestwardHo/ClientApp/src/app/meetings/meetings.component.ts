@@ -18,6 +18,9 @@ export class MeetingsComponent implements OnInit {
   userID: string = "";
   meetings: Array<any> = [];
   meetingsList: Array<any> = [];
+  isAdmin: Array<any> = [];
+  isAdminList: Array<any> = [];
+  isAdminUser: boolean = false;
 
   constructor(
     private router: Router,
@@ -29,6 +32,7 @@ export class MeetingsComponent implements OnInit {
   ngOnInit() {
     this.userID = localStorage.getItem("userID");
     this.getMeeting();
+    this.canViewMeeting();
   }
 
   getMeeting() {
@@ -42,6 +46,24 @@ export class MeetingsComponent implements OnInit {
       }
       this.isLoading = false;
     });
+  }
+
+  canViewMeeting() {
+    if (this.userID != null) {
+      this.systemService.getCanUserViewComplaints(this.userID).then(results => {
+        if (results != null && results != undefined && results.length > 0) {
+          this.isAdmin = results;
+          this.isAdminList = results;
+
+          if (this.isAdmin[0].isAdmin) {
+            this.isAdminUser = true;
+          }
+          else {
+            this.isAdminUser = false;
+          }
+        }
+      });
+    }
   }
 
   deleteMeeting(meetingID) {

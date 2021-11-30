@@ -53,7 +53,7 @@ export class ViewWaterComponent implements OnInit {
         for (var i = 0; i < results.length; i++) {
           this.chartDataUnit.push("Unit " + results[i].unit);
           this.chartDataUsage.push(results[i].usage);
-          this.chartDataColors.push('#811515');
+          this.chartDataColors.push('#2a7280');
         }
       }
       this.barCanvas = document.getElementById('barChart');
@@ -95,7 +95,7 @@ export class ViewWaterComponent implements OnInit {
             backgroundColor: this.chartDataColors,
             pointBackgroundColor: this.chartDataColors,
             fill: false,
-            borderColor: '#811515',
+            borderColor: '#2a7280',
             borderWidth: 1
           }]
         },

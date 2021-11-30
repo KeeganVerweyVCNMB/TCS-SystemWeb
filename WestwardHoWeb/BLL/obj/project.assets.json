@@ -7716,11 +7716,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7736,8 +7736,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoWebSystemPrj\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj"
+            "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\VC 2021\\Semester 2 2021\\XISD-6319\\WestwardHoProg\\TCS-SystemWeb\\WestwardHoWeb\\DAL\\DAL.csproj"
             }
           }
         }
